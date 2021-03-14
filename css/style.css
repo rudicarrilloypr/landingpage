@@ -6,6 +6,7 @@
 .container {
   width: 500px;
 }
+
 .home-p {
   font-weight: 700;
 }
@@ -36,4 +37,9 @@ a.navbar-item:hover {
 .hero-text {
   font-weight: bolder;
   font-size: 3.45rem;
+}
+
+.front-icon {
+  width: 12%;
+  margin-left: 18px;
 }
