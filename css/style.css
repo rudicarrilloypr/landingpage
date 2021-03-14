@@ -3,6 +3,9 @@
   right: 40px;
 }
 
+.container {
+  width: 500px;
+}
 .home-p {
   font-weight: 700;
 }
