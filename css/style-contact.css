@@ -1,0 +1,36 @@
+.navbar-end {
+  position: fixed;
+  right: 40px;
+}
+
+.contact-p {
+  font-weight: 700;
+}
+
+a {
+  color: #88fbd7;
+}
+
+a.navbar-item:hover {
+  color: #88fbd7;
+  background-color: white;
+}
+
+.no-pointer {
+  cursor: e-resize;
+}
+
+.txt {
+  background: linear-gradient(to right, #6ed3d0 0%, #00faab 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.front-text {
+  line-height: 1.1;
+}
+
+.hero-text {
+  font-weight: bolder;
+  font-size: 3.45rem;
+}
