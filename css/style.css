@@ -3,6 +3,10 @@
   right: 40px;
 }
 
+.navbar-burger, a:hover {
+  color: #88fbd7;
+}
+
 .container {
   width: 530px;
 }

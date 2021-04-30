@@ -8,19 +8,26 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-  <nav class="navbar-end is-fixed-top is-transparent" aria-label="main navigation">
-    <div class="menu mt-2 is-hidden-touch is-transparent">
-      <a class="navbar-item pb-0" href="./../../index.html">home</a>
-      <a class="navbar-item py-0" href="work.html">work</a>
-      <a class="navbar-item py-0 about-p" href="about.html">about</a>
-      <a class="navbar-item py-0" href="contact.html">contact</a>
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand first-nav" aria-label="main navigation">
+      <div class="menu">     
+      </div>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end menu mt-2 is-transparent">
+          <div class="menu mt-2 is-transparent" aria-label="main navigation">
+            <a class="navbar-item pb-0" href="../../index.html">home</a>
+            <a class="navbar-item py-0" href="./work.html">work</a>
+            <a class="navbar-item py-0 about-p" href="#">about</a>
+            <a class="navbar-item py-0" href="./contact.html">contact</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true">home</span>
-      <span aria-hidden="true">work</span>
-      <span aria-hidden="true">about</span>
-    </a>
-    
   </nav>
   <section class="hero is-fullheight-with-navbar">
     <div class="hero-head mt-6"></div>
