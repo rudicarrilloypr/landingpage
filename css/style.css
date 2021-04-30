@@ -41,6 +41,10 @@ a.navbar-item:hover {
   line-height: 1.1;
 }
 
+.title-x {
+  font-weight: bolder;
+}
+
 .hero-text {
   font-weight: bolder;
   font-size: 3.45rem;
@@ -50,3 +54,23 @@ a.navbar-item:hover {
   width: 12%;
   margin-left: 18px;
 }
+
+.front-icon-projects {
+  width: 9%;
+  margin-left: 18px;
+}
+
+@media screen and (min-width: 1216px) {
+  .container:not(.is-max-desktop) {
+      max-width: 1152px;
+  }
+}
+
+.big-container {
+  width: 100%;
+}
+
+.image-card {
+  background: black url(../assets/easyweather.jpg) center / cover;
+}
+
