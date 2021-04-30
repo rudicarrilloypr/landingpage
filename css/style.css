@@ -3,11 +3,18 @@
   right: 40px;
 }
 
-.container {
-  width: 520px;
+.navbar-burger, a:hover {
+  color: #88fbd7;
 }
 
-.home-p {
+.container {
+  width: 530px;
+}
+
+.home-p,
+.work-p,
+.contact-p,
+.about-p {
   font-weight: 700;
 }
 
