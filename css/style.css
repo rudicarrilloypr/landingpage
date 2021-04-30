@@ -7,7 +7,10 @@
   width: 530px;
 }
 
-.home-p, .work-p, .contact-p, .about-p {
+.home-p,
+.work-p,
+.contact-p,
+.about-p {
   font-weight: 700;
 }
 
