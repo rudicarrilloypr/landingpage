@@ -70,7 +70,18 @@ a.navbar-item:hover {
   width: 100%;
 }
 
-.image-card {
+.sustyle {
+  background: black url(../assets/sustyle.jpg) center / cover;
+}
+
+.private {
+  background: black url(../assets/private.jpg) center / cover;
+}
+
+.easy-weather {
   background: black url(../assets/easyweather.jpg) center / cover;
 }
 
+.p-project {
+  background: rgba(51, 51, 51, 0.2)
+}
