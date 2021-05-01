@@ -3,7 +3,12 @@
   right: 40px;
 }
 
-.navbar-burger, a:hover {
+a {
+  color: #88fbd7;
+}
+
+.navbar-burger,
+a:hover {
   color: #88fbd7;
 }
 
@@ -16,10 +21,6 @@
 .contact-p,
 .about-p {
   font-weight: 700;
-}
-
-a {
-  color: #88fbd7;
 }
 
 a.navbar-item:hover {
@@ -41,6 +42,10 @@ a.navbar-item:hover {
   line-height: 1.1;
 }
 
+.title-x {
+  font-weight: bolder;
+}
+
 .hero-text {
   font-weight: bolder;
   font-size: 3.45rem;
@@ -49,4 +54,42 @@ a.navbar-item:hover {
 .front-icon {
   width: 12%;
   margin-left: 18px;
+}
+
+.front-icon-projects {
+  width: 45px;
+}
+
+.front-icon-projects2 {
+  width: 38px;
+}
+
+@media screen and (min-width: 1216px) {
+  .container:not(.is-max-desktop) {
+    max-width: 1152px;
+  }
+}
+
+.big-container {
+  width: 100%;
+}
+
+.sustyle {
+  background: black url(../assets/sustyle.jpg) center / cover;
+}
+
+.IK {
+  background: black url(../assets/IK.jpg) center / cover;
+}
+
+.private {
+  background: black url(../assets/private.jpg) center / cover;
+}
+
+.easy-weather {
+  background: black url(../assets/easyweather.jpg) center / cover;
+}
+
+.p-project {
+  background: rgba(51, 51, 51, 0.2);
 }
