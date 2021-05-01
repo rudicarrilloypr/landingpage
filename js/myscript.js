@@ -1,3 +1,4 @@
+/* eslint-disable */
 // mobile menu
 
 const burgerIcon = document.getElementById('burger');

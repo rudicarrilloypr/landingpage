@@ -3,7 +3,12 @@
   right: 40px;
 }
 
-.navbar-burger, a:hover {
+a {
+  color: #88fbd7;
+}
+
+.navbar-burger,
+a:hover {
   color: #88fbd7;
 }
 
@@ -16,10 +21,6 @@
 .contact-p,
 .about-p {
   font-weight: 700;
-}
-
-a {
-  color: #88fbd7;
 }
 
 a.navbar-item:hover {
@@ -65,7 +66,7 @@ a.navbar-item:hover {
 
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
-      max-width: 1152px;
+    max-width: 1152px;
   }
 }
 
@@ -90,5 +91,5 @@ a.navbar-item:hover {
 }
 
 .p-project {
-  background: rgba(51, 51, 51, 0.2)
+  background: rgba(51, 51, 51, 0.2);
 }
