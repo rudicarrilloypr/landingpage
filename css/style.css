@@ -56,8 +56,11 @@ a.navbar-item:hover {
 }
 
 .front-icon-projects {
-  width: 9%;
-  margin-left: 18px;
+  width: 45px;
+}
+
+.front-icon-projects2 {
+  width: 38px;
 }
 
 @media screen and (min-width: 1216px) {
@@ -72,6 +75,10 @@ a.navbar-item:hover {
 
 .sustyle {
   background: black url(../assets/sustyle.jpg) center / cover;
+}
+
+.IK {
+  background: black url(../assets/IK.jpg) center / cover;
 }
 
 .private {
