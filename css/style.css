@@ -9,7 +9,7 @@ a {
 
 .navbar-burger,
 a:hover {
-  color: #88fbd7;
+  color: #6ed3d0;
 }
 
 .container {
@@ -46,16 +46,6 @@ a.navbar-item:hover {
   font-weight: bolder;
 }
 
-.hero-text {
-  font-weight: bolder;
-  font-size: 3.45rem;
-}
-
-.front-icon {
-  width: 12%;
-  margin-left: 18px;
-}
-
 .front-icon-projects {
   width: 45px;
 }
@@ -67,6 +57,40 @@ a.navbar-item:hover {
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
+  }
+
+  .front-icon {
+    width: 80px;
+    margin-left: 18px;
+  }
+
+  .hero-text {
+    font-weight: bolder;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1235px) and (min-width: 1023px) {
+  .front-icon {
+    width: 60px;
+    margin-left: 18px;
+  }
+
+  .hero-text {
+    font-weight: bolder;
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .front-icon {
+    width: 40px;
+    margin-left: 18px;
+  }
+
+  .hero-text {
+    font-weight: bolder;
+    font-size: 1.7rem;
   }
 }
 
