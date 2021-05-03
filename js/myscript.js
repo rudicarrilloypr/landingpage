@@ -169,3 +169,6 @@ new HoverButton(btn2);
 
 const btn3 = document.getElementById('angellist');
 new HoverButton(btn3);
+
+const btn4 = document.getElementById('medium');
+new HoverButton(btn4);
