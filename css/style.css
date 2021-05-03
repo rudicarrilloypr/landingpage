@@ -71,16 +71,16 @@ a.navbar-item:hover {
 
   .mePhoto {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-      filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .8s ease-in-out;  
-    }
-  
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all 0.8s ease-in-out;
+  }
+
   .mePhoto:hover {
     filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
-    }
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+  }
 }
 
 @media screen and (max-width: 1235px) and (min-width: 1023px) {
@@ -92,23 +92,21 @@ a.navbar-item:hover {
   .hero-text {
     font-weight: bolder;
     font-size: 2.7rem;
-
-  
   }
 
   .mePhoto {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-      filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .8s ease-in-out; 
-      width: 100%; 
-    }
-  
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all 0.8s ease-in-out;
+    width: 100%;
+  }
+
   .mePhoto:hover {
     filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
-    }
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+  }
 }
 
 @media screen and (max-width: 1022px) {
@@ -152,5 +150,5 @@ a.navbar-item:hover {
 }
 
 .zborder:hover {
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
 }
