@@ -59,6 +59,10 @@ a.navbar-item:hover {
     max-width: 1152px;
   }
 
+  .container-c {
+    width: 1000px;
+  }
+
   .front-icon {
     width: 80px;
     margin-left: 18px;
@@ -84,6 +88,10 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 1235px) and (min-width: 1023px) {
+  .container-c {
+    width: 800px;
+  }
+
   .front-icon {
     width: 60px;
     margin-left: 18px;
