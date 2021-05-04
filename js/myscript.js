@@ -10,14 +10,34 @@ const toggleBurger = () => {
   burgerIcon.classList.toggle('is-active');
 }
 
-burgerIcon.addEventListener('click', () => {
+/* burgerIcon.addEventListener('click', () => {
   navbarMenu.classList.toggle('is-active');
   burgerIcon.classList.toggle('is-active');
+}); */
+
+
+burgerIcon.addEventListener('click', toggleBurger);
+
+/* document.addEventListener("touchend", function(e) {
+  if (e.target.id === "burger"){
+    document.getElementById('nav-links').classList.add('is-active');
+    document.getElementById('burger').classList.add('is-active');
+  } else {
+    document.getElementById('nav-links').classList.remove('is-active');
+    document.getElementById('burger').classList.remove('is-active');
+  }
 });
 
+document.addEventListener("click", function(e) {
+  if (e.target.id === "burger"){
+    document.getElementById('nav-links').classList.add('is-active');
+    document.getElementById('burger').classList.add('is-active');
+  } else {
+    document.getElementById('nav-links').classList.remove('is-active');
+    document.getElementById('burger').classList.remove('is-active');
+  }
+}); */
 
-rootEvent.addEventListener('click', toggleBurger);
-rootEvent.addEventListener('touchend', toggleBurger);
 
 class TextScramble {
   constructor(el) {
