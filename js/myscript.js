@@ -10,17 +10,11 @@ const toggleBurger = () => {
   burgerIcon.classList.toggle('is-active');
 }
 
-/* burgerIcon.addEventListener('click', () => {
+burgerIcon.addEventListener('click', () => {
   navbarMenu.classList.toggle('is-active');
   burgerIcon.classList.toggle('is-active');
 });
- */
 
-burgerIcon.addEventListener('click', (e) => {
-  navbarMenu.classList.toggle('is-active');
-  e.preventDefault();
-  e.stopPropagation();
-});
 
 rootEvent.addEventListener('click', toggleBurger);
 rootEvent.addEventListener('touchend', toggleBurger);
