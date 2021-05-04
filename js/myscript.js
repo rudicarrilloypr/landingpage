@@ -1,13 +1,29 @@
 /* eslint-disable */
 // mobile menu
+const rootEvent = document.getElementById("rootElement");
 
 const burgerIcon = document.getElementById('burger');
 const navbarMenu = document.getElementById('nav-links');
 
-burgerIcon.addEventListener('click', () => {
+const toggleBurger = () => {
+  navbarMenu.classList.toggle('is-active');
+  burgerIcon.classList.toggle('is-active');
+}
+
+/* burgerIcon.addEventListener('click', () => {
   navbarMenu.classList.toggle('is-active');
   burgerIcon.classList.toggle('is-active');
 });
+ */
+
+burgerIcon.addEventListener('click', (e) => {
+  navbarMenu.classList.toggle('is-active');
+  e.preventDefault();
+  e.stopPropagation();
+});
+
+rootEvent.addEventListener('click', toggleBurger);
+rootEvent.addEventListener('touchend', toggleBurger);
 
 class TextScramble {
   constructor(el) {
