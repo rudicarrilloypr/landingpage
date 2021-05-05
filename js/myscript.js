@@ -10,11 +10,6 @@ const toggleBurger = () => {
   /* burgerIcon.classList.toggle('is-active'); */
 }
 
-burgerIcon.addEventListener('touchstart', () => {});
-burgerIcon.addEventListener('touchend', () => {});
-burgerIcon.addEventListener('touchcancel', () => {});
-burgerIcon.addEventListener('touchmove', () => {});
-
 burgerIcon.addEventListener('click', toggleBurger);
 
 class TextScramble {
