@@ -7,7 +7,7 @@ a {
   color: #88fbd7;
 }
 
-#burger {
+.extra, #burger {
   cursor: pointer;
 }
 
