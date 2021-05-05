@@ -7,10 +7,10 @@ const navbarMenu = document.getElementById('nav-links');
 
 const toggleBurger = () => {
   navbarMenu.classList.toggle('is-active');
-  /* burgerIcon.classList.toggle('is-active'); */
+  burgerIcon.classList.toggle('is-active');
 }
 
-burgerIcon.addEventListener('click', toggleBurger);
+/* burgerIcon.addEventListener('click', toggleBurger); */
 
 class TextScramble {
   constructor(el) {
