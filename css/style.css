@@ -7,10 +7,6 @@ a {
   color: #88fbd7;
 }
 
-.extra, #burger {
-  cursor: pointer;
-}
-
 .navbar-burger,
 a:hover {
   color: #6ed3d0;
