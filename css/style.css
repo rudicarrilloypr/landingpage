@@ -3,6 +3,11 @@
   right: 40px;
 }
 
+.item {
+  color: #4a4a4a;
+  font-size: .8rem;
+}
+
 a {
   color: #88fbd7;
 }

@@ -1,17 +1,4 @@
 /* eslint-disable */
-// mobile menu
-const rootEvent = document.getElementById("rootElement");
-
-const burgerIcon = document.getElementById('burger');
-const navbarMenu = document.getElementById('nav-links');
-
-const toggleBurger = () => {
-  navbarMenu.classList.toggle('is-active');
-  burgerIcon.classList.toggle('is-active');
-}
-
-/* burgerIcon.addEventListener('click', toggleBurger); */
-
 class TextScramble {
   constructor(el) {
     this.el = el;
