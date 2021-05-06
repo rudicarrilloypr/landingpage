@@ -175,9 +175,10 @@ a.navbar-item:hover {
 }
 
 .skill-h {
-  background-color: #45D1B2;
+  background-color: #45d1b2;
 }
 
 .content ul {
   list-style-type: none;
+  margin-left: 0;
 }
