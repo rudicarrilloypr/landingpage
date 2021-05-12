@@ -107,6 +107,10 @@ a.navbar-item:hover {
     font-size: 2.7rem;
   }
 
+  .photo {
+    width: 50%;
+  }
+
   .mePhoto {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
@@ -164,4 +168,17 @@ a.navbar-item:hover {
 
 .zborder:hover {
   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
+}
+
+.home-s {
+  height: 100vh;
+}
+
+.skill-h {
+  background-color: #45d1b2;
+}
+
+.content ul {
+  list-style-type: none;
+  margin-left: 0;
 }
