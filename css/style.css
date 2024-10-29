@@ -9,7 +9,7 @@
 }
 
 .item {
-  color: #4a4a4a;
+  color: #646464;
   font-size: 0.8rem;
 }
 
@@ -19,7 +19,7 @@ a {
 
 .navbar-burger,
 a:hover {
-  color: #6ed3d0;
+  color: #f7c743;
 }
 
 .container {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 a.navbar-item:hover {
-  color: #88fbd7;
+  color: #f7c743;
   background-color: white;
 }
 
@@ -49,7 +49,16 @@ a.navbar-item:hover {
 }
 
 .front-text {
+  font-family: 'Sriracha', cursive;
+  letter-spacing: 0.01em;
+  font-size: 8em;
   line-height: 1.1;
+}
+
+.dancing-script {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
 }
 
 .title-x {
@@ -62,6 +71,17 @@ a.navbar-item:hover {
 
 .front-icon-projects2 {
   width: 38px;
+}
+
+#facebook {
+  width: 32px;
+  height: auto;
+  position: relative;
+  top: -4.5px;
+}
+
+#facebook #booking {
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 1216px) {
@@ -94,6 +114,13 @@ a.navbar-item:hover {
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
+  }
+
+  #facebook {
+    width: 60px;
+    height: auto;
+    position: relative;
+    top: -12px;
   }
 }
 

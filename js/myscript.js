@@ -61,11 +61,11 @@ class TextScramble {
 }
 
 const phrases = [
-  'web-apps.',
-  'websites.',
-  'databases.',
-  'e-commerce.',
-  'solutions.',
+  'joy.',
+  'home.',
+  'adventure.',
+  'journey.',
+  'welcome.',
 ];
 
 const el = document.querySelector('.text');
@@ -151,14 +151,14 @@ class HoverButton {
   }
 }
 
-const btn1 = document.getElementById('github');
-new HoverButton(btn1);
+/*const btn1 = document.getElementById('github');
+new HoverButton(btn1); */
 
-const btn2 = document.getElementById('linkedin');
+const btn2 = document.getElementById('facebook');
 new HoverButton(btn2);
 
-const btn3 = document.getElementById('angellist');
+const btn3 = document.getElementById('booking');
 new HoverButton(btn3);
 
-const btn4 = document.getElementById('medium');
-new HoverButton(btn4);
+/*const btn4 = document.getElementById('medium');
+new HoverButton(btn4); */
