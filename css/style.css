@@ -91,10 +91,15 @@ a.navbar-item:hover {
 }
 
 #facebook {
-  width: 36px;
+  width: 50px;
   height: auto;
   position: relative;
   top: -3.4px;
+}
+
+#booking {
+  width: 55px;
+  height: auto;
 }
 
 #facebook #booking {
@@ -138,6 +143,11 @@ a.navbar-item:hover {
     height: auto;
     position: relative;
     top: -7px;
+  }
+
+  #booking {
+    width: 77px;
+    height: auto;
   }
 }
 
@@ -203,9 +213,9 @@ a.navbar-item:hover {
   background: black url(../assets/private.jpg) center / cover;
 }
 
-.easy-weather {
+/* .easy-weather {
   background: black url(../assets/easyweather.jpg) center / cover;
-}
+} */
 
 .p-project {
   background: rgba(51, 51, 51, 0.2);
