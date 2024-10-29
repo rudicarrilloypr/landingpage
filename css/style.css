@@ -37,6 +37,10 @@ a:hover {
   font-weight: 700;
 }
 
+a.navbar-item {
+  color: #2878e1;
+}
+
 a.navbar-item:hover {
   color: #f7c743;
   background-color: white;
@@ -76,6 +80,14 @@ a.navbar-item:hover {
 
 .front-icon-projects2 {
   width: 38px;
+}
+
+.subtitle {
+  color: #006eff;
+}
+
+.has-text-weight-bold {
+  color: rgb(255, 187, 0);
 }
 
 #facebook {
