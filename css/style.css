@@ -8,7 +8,7 @@ body {
 }
 
 ::selection {
-  background-color: #6ed3d0;
+  background-color: #f7c743;
   color: white;
 }
 
@@ -84,6 +84,10 @@ a.navbar-item:hover {
 
 .subtitle {
   color: #006eff;
+}
+
+.has-text-primary {
+  color: #fb0 !important;
 }
 
 .has-text-weight-bold {
@@ -234,7 +238,7 @@ a.navbar-item:hover {
 }
 
 .skill-h {
-  background-color: #45d1b2;
+  background-color: #fb0;
 }
 
 .content ul {
