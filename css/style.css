@@ -1,3 +1,7 @@
+body {
+  color: #2878e1; /* Azul específico */
+}
+
 .navbar-end {
   position: fixed;
   right: 40px;
@@ -9,12 +13,12 @@
 }
 
 .item {
-  color: #646464;
+  color: #2878e1;
   font-size: 0.8rem;
 }
 
 a {
-  color: #88fbd7;
+  color: #2878e1;
 }
 
 .navbar-burger,
@@ -43,7 +47,7 @@ a.navbar-item:hover {
 }
 
 .txt {
-  background: linear-gradient(to right, #6ed3d0 0%, #00faab 100%);
+  background: linear-gradient(to right, #2878e1 0%, #b1d3ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -59,6 +63,7 @@ a.navbar-item:hover {
   font-family: 'Pacifico', cursive;
   font-size: 1.4em;
   letter-spacing: 0.1em;
+  color: #fb0;
 }
 
 .title-x {
@@ -74,10 +79,10 @@ a.navbar-item:hover {
 }
 
 #facebook {
-  width: 32px;
+  width: 36px;
   height: auto;
   position: relative;
-  top: -4.5px;
+  top: -3.4px;
 }
 
 #facebook #booking {
@@ -117,10 +122,10 @@ a.navbar-item:hover {
   }
 
   #facebook {
-    width: 60px;
+    width: 66px;
     height: auto;
     position: relative;
-    top: -12px;
+    top: -7px;
   }
 }
 
