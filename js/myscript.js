@@ -62,7 +62,7 @@ class TextScramble {
 
 const phrases = [
   'joy.',
-  'home.',
+  'rest.',
   'adventure.',
   'journey.',
   'welcome.',
