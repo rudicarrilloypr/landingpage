@@ -110,6 +110,10 @@ a.navbar-item:hover {
   vertical-align: middle;
 }
 
+.has-background-primary {
+  background-color: #006eff !important;
+}
+
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
