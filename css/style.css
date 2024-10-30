@@ -80,6 +80,8 @@ a.navbar-item:hover {
 
 .title-x {
   font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .front-icon-projects {
@@ -120,6 +122,37 @@ a.navbar-item:hover {
 
 .has-background-primary {
   background-color: #006eff !important;
+}
+
+.about-s {
+  background-color: #f9f9f9;
+  padding: 3rem 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-box h3 {
+  color: #01357a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-box p {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.6;
 }
 
 @media screen and (min-width: 1216px) {
