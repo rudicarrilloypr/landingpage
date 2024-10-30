@@ -2,6 +2,13 @@ body {
   color: #2878e1;
 }
 
+.navbar-item.active,
+.item.ml-3.active,
+.item.ml-4.active {
+  color: #f7c743; /* Color de resaltado */
+  font-weight: bold; /* Asegúrate de que sea visible */
+}
+
 .navbar-end {
   position: fixed;
   right: 40px;

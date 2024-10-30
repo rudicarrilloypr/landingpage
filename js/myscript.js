@@ -162,3 +162,38 @@ new HoverButton(btn3);
 
 /*const btn4 = document.getElementById('medium');
 new HoverButton(btn4); */
+// Selecciona todos los enlaces del navbar, incluyendo los de la versión móvil
+const navLinks = document.querySelectorAll('.navbar-item, .item.ml-3, .item.ml-4');
+
+// Selecciona todas las secciones que se deben observar para el cambio de color
+const sections = document.querySelectorAll('section');
+
+// Función que verifica qué sección está en la vista del usuario
+const activateNavLink = () => {
+  let currentSection = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const scrollPosition = window.scrollY + window.innerHeight / 3; // Ajuste de precisión
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      currentSection = section.getAttribute('id');
+    }
+  });
+
+  // Agrega o quita la clase "active" según la sección actual
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(currentSection)) {
+      link.classList.add('active');
+    }
+  });
+};
+
+// Escucha eventos de scroll y resize
+window.addEventListener('scroll', activateNavLink);
+window.addEventListener('resize', activateNavLink);
+activateNavLink();
+
+
