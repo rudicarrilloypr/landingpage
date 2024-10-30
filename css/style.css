@@ -31,11 +31,11 @@ a:hover {
 }
 
 .logo-fixed {
-  display: block;
-  margin: 40px auto 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80px; /* Ajusta el tamaño según sea necesario */
   height: auto;
-  text-align: center;
 }
 
 .home-p,
