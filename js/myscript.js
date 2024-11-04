@@ -81,6 +81,33 @@ const next = () => {
 
 next();
 
+const phrasesContact = [
+  '#Hello', 
+  '#Hola', 
+  '#Bonjour', 
+  '#Ciao', 
+  '#こんにちは', 
+  '#안녕하세요', 
+  '#Привет', 
+  '#Hallo', 
+  '#مرحبا', 
+  '#Olá'
+];
+
+const elContact = document.querySelector('.text-contact'); // Cambiado para apuntar al elemento correcto
+const fxContact = new TextScramble(elContact);
+
+let counterContact = 0;
+const nextContact = () => {
+  fxContact.setText(phrasesContact[counterContact]).then(() => {
+    setTimeout(nextContact, 4000);
+  });
+  counterContact = (counterContact + 1) % phrasesContact.length;
+};
+
+nextContact();
+
+
 // Hover button
 
 class HoverButton {
