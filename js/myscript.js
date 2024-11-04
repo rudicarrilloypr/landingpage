@@ -160,8 +160,8 @@ new HoverButton(btn2);
 const btn3 = document.getElementById('booking');
 new HoverButton(btn3);
 
-/*const btn4 = document.getElementById('medium');
-new HoverButton(btn4); */
+const btn4 = document.getElementById('medium');
+new HoverButton(btn4);
 // Selecciona todos los enlaces del navbar, incluyendo los de la versión móvil
 const navLinks = document.querySelectorAll('.navbar-item, .item.ml-3, .item.ml-4');
 

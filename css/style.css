@@ -111,6 +111,25 @@ a.navbar-item:hover {
   color: rgb(255, 187, 0);
 }
 
+.direct-reservation-btn {
+  background-color: transparent; /* Fondo transparente */
+  color: #2878e1; /* Color de texto azul elegante */
+  border: 2px solid #2878e1; /* Borde azul elegante */
+  padding: 0.75em 1.5em; /* Espaciado cómodo */
+  font-size: 1rem; /* Tamaño de fuente */
+  border-radius: 0.5em; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Efecto suave al pasar el ratón */
+  font-weight: 600; /* Negrita para que el texto destaque */
+  margin-top: 20px;
+}
+
+.direct-reservation-btn:hover {
+  background-color: #2878e1; /* Fondo azul al pasar el ratón */
+  color: #fff; /* Texto blanco al pasar el ratón */
+  border-color: #2878e1; /* Mantiene el borde azul */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
 #facebook {
   width: 50px;
   height: auto;
@@ -121,6 +140,13 @@ a.navbar-item:hover {
 #booking {
   width: 55px;
   height: auto;
+}
+
+#medium {
+  width: 46px;
+  height: auto;
+  position: relative;
+  top: -6px;
 }
 
 #facebook #booking {
@@ -208,6 +234,13 @@ a.navbar-item:hover {
   #booking {
     width: 77px;
     height: auto;
+  }
+
+  #medium {
+    width: 60px;
+    height: auto;
+    position: relative;
+    top: -10px;
   }
 }
 
