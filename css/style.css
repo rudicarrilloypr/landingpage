@@ -234,6 +234,17 @@ a.navbar-item:hover {
   background-color: #333;
 }
 
+footer.footer {
+  background-color: #f9f9f9; /* O cualquier color que prefieras */
+  padding: 10px 0; /* Reduce el padding para hacer el footer más angosto */
+  font-size: 0.6rem; /* Ajusta el tamaño del texto para que sea menos prominente */
+  color: #666; /* Cambia el color del texto si es necesario */
+}
+
+footer .content {
+  margin: 0; /* Elimina el margen para optimizar el espacio */
+}
+
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
