@@ -89,6 +89,7 @@ a.navbar-item:hover {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-top: 60px;
 }
 
 .front-icon-projects {
