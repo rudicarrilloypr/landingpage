@@ -188,6 +188,52 @@ a.navbar-item:hover {
   line-height: 1.6;
 }
 
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-wrapper.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.dots-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
@@ -222,6 +268,18 @@ a.navbar-item:hover {
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
+  }
+
+  .direct-reservation-btn {
+    margin-top: 40px;
+  }
+
+  .mt-5 {
+    margin-top: 0 !important;
+  }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
   }
 
   #facebook {
