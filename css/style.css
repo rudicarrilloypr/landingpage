@@ -92,6 +92,13 @@ a.navbar-item:hover {
   margin-top: 60px;
 }
 
+.icon-container {
+  margin-top: -60px !important; /* Ajusta este valor para subir o bajar los iconos */
+  margin-right: 18px;
+  display: flex;
+  gap: 12px;
+}
+
 .front-icon-projects {
   width: 45px;
 }
@@ -150,7 +157,14 @@ a.navbar-item:hover {
   top: -6px;
 }
 
-#facebook #booking {
+#github {
+  width: 40px;
+  height: auto;
+  position: relative;
+  top: -8px;
+}
+
+#facebook #booking #medium #github {
   vertical-align: middle;
 }
 
@@ -246,6 +260,28 @@ footer .content {
   margin: 0; /* Elimina el margen para optimizar el espacio */
 }
 
+.nav-reserve-btn {
+  background-color: #f7c743;
+  color: #006eff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  position: fixed; /* Fija el botón en la pantalla */
+  top: 94%; /* Centra verticalmente en móviles */
+  transform: translateY(-50%); /* Ajuste para centrar completamente */
+  left: 0; /* Pega el botón al borde derecho */
+  padding: 0.7em 1em;
+  font-size: 0.7em;
+  z-index: 1000;
+}
+
+.nav-reserve-btn:hover {
+  background-color: #01357a;
+  color: #f7c743;
+  transform: translateY(-2px);
+}
+
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
@@ -292,6 +328,7 @@ footer .content {
 
   .icon-container {
     margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
   }
 
   #facebook {
@@ -312,6 +349,31 @@ footer .content {
     position: relative;
     top: -10px;
   }
+
+  #github {
+    width: 55.5px;
+    height: auto;
+    position: relative;
+    top: -10px;
+  }
+
+  .nav-reserve-btn {
+    background-color: #f7c743;
+    color: rgb(189, 0, 0);
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+
+  .nav-reserve-btn:hover {
+    background-color: #01357a;
+    color: #f7c743;
+    transform: translateY(-2px);
+  }
 }
 
 @media screen and (max-width: 1235px) and (min-width: 1023px) {
@@ -322,6 +384,11 @@ footer .content {
   .front-icon {
     width: 60px;
     margin-left: 18px;
+  }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
   }
 
   .hero-text {
@@ -357,6 +424,11 @@ footer .content {
   .hero-text {
     font-weight: bolder;
     font-size: 1.7rem;
+  }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
   }
 }
 

@@ -175,8 +175,8 @@ class HoverButton {
   }
 }
 
-/*const btn1 = document.getElementById('github');
-new HoverButton(btn1); */
+const btn1 = document.getElementById('github');
+new HoverButton(btn1);
 
 const btn2 = document.getElementById('facebook');
 new HoverButton(btn2);
