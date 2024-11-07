@@ -274,12 +274,35 @@ footer .content {
   padding: 0.7em 1em;
   font-size: 0.7em;
   z-index: 1000;
+  animation: colorChange 3s infinite;
 }
 
 .nav-reserve-btn:hover {
   background-color: #01357a;
   color: #f7c743;
   transform: translateY(-2px);
+}
+
+@keyframes colorChange {
+  0% {
+    color: #01357a; /* Azul oscuro */
+  }
+
+  25% {
+    color: #f00; /* Rosado */
+  }
+
+  50% {
+    color: rgb(0, 0, 0); /* Amarillo */
+  }
+
+  75% {
+    color: #006eff; /* Azul claro */
+  }
+
+  100% {
+    color: #5e019c; /* Regresa al azul oscuro */
+  }
 }
 
 @media screen and (min-width: 1216px) {
