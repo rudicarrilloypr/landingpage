@@ -460,15 +460,39 @@ footer .content {
 }
 
 .sustyle {
-  background: black url(../assets/sustyle.jpg) center / cover;
+  background: url(../assets/sustyle.jpeg) center / cover no-repeat;
 }
 
 .IK {
-  background: black url(../assets/IK.jpg) center / cover;
+  background: url(../assets/ik.jpg) center / cover no-repeat;
 }
 
 .private {
-  background: black url(../assets/private.jpg) center / cover;
+  background: url(../assets/private.jpg) center / cover no-repeat;
+}
+
+.additional1 {
+  background: url(../assets/additional1.jpg) center / cover no-repeat;
+}
+
+.additional2 {
+  background: url(../assets/additional2.jpg) center / cover no-repeat;
+}
+
+.additional3 {
+  background: url(../assets/additional3.jpg) center / cover no-repeat;
+}
+
+.additional4 {
+  background: url(../assets/additional4.jpg) center / cover no-repeat;
+}
+
+.additional5 {
+  background: url(../assets/additional5.jpg) center / cover no-repeat;
+}
+
+.additional6 {
+  background: url(../assets/additional6.jpg) center / cover no-repeat;
 }
 
 /* .easy-weather {
