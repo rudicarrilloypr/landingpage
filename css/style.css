@@ -1,29 +1,48 @@
+body {
+  color: #2878e1;
+}
+
+.navbar-item.active,
+.item.ml-3.active,
+.item.ml-4.active {
+  color: #f7c743; /* Color de resaltado */
+  font-weight: bold; /* Asegúrate de que sea visible */
+}
+
 .navbar-end {
   position: fixed;
   right: 40px;
 }
 
 ::selection {
-  background-color: #6ed3d0;
+  background-color: #f7c743;
   color: white;
 }
 
 .item {
-  color: #4a4a4a;
+  color: #2878e1;
   font-size: 0.8rem;
 }
 
 a {
-  color: #88fbd7;
+  color: #2878e1;
 }
 
 .navbar-burger,
 a:hover {
-  color: #6ed3d0;
+  color: #f7c743;
 }
 
 .container {
   width: 530px;
+}
+
+.logo-fixed {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
 }
 
 .home-p,
@@ -33,8 +52,12 @@ a:hover {
   font-weight: 700;
 }
 
+a.navbar-item {
+  color: #2878e1;
+}
+
 a.navbar-item:hover {
-  color: #88fbd7;
+  color: #f7c743;
   background-color: white;
 }
 
@@ -43,17 +66,37 @@ a.navbar-item:hover {
 }
 
 .txt {
-  background: linear-gradient(to right, #6ed3d0 0%, #00faab 100%);
+  background: linear-gradient(to right, #2878e1 0%, #b1d3ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .front-text {
+  font-family: 'Sriracha', cursive;
+  letter-spacing: 0.01em;
+  font-size: 8em;
   line-height: 1.1;
+}
+
+.dancing-script {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  color: #fb0;
 }
 
 .title-x {
   font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 60px;
+}
+
+.icon-container {
+  margin-top: -60px !important; /* Ajusta este valor para subir o bajar los iconos */
+  margin-right: 18px;
+  display: flex;
+  gap: 12px;
 }
 
 .front-icon-projects {
@@ -64,9 +107,211 @@ a.navbar-item:hover {
   width: 38px;
 }
 
+.subtitle {
+  color: #006eff;
+}
+
+.has-text-primary {
+  color: #01357a !important;
+}
+
+.has-text-weight-bold {
+  color: rgb(255, 187, 0);
+}
+
+.direct-reservation-btn {
+  background-color: transparent; /* Fondo transparente */
+  color: #2878e1; /* Color de texto azul elegante */
+  border: 2px solid #2878e1; /* Borde azul elegante */
+  padding: 0.75em 1.5em; /* Espaciado cómodo */
+  font-size: 1rem; /* Tamaño de fuente */
+  border-radius: 0.5em; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Efecto suave al pasar el ratón */
+  font-weight: 600; /* Negrita para que el texto destaque */
+  margin-top: 20px;
+}
+
+.direct-reservation-btn:hover {
+  background-color: #2878e1; /* Fondo azul al pasar el ratón */
+  color: #fff; /* Texto blanco al pasar el ratón */
+  border-color: #2878e1; /* Mantiene el borde azul */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+#facebook {
+  width: 50px;
+  height: auto;
+  position: relative;
+  top: -3.4px;
+}
+
+#booking {
+  width: 55px;
+  height: auto;
+}
+
+#medium {
+  width: 46px;
+  height: auto;
+  position: relative;
+  top: -6px;
+}
+
+#github {
+  width: 40px;
+  height: auto;
+  position: relative;
+  top: -8px;
+}
+
+#facebook #booking #medium #github {
+  vertical-align: middle;
+}
+
+.has-background-primary {
+  background-color: #006eff !important;
+}
+
+.about-s {
+  background-color: #f9f9f9;
+  padding: 3rem 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-box h3 {
+  color: #01357a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-box p {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-wrapper.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.dots-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+footer.footer {
+  background-color: #f9f9f9; /* O cualquier color que prefieras */
+  padding: 10px 0; /* Reduce el padding para hacer el footer más angosto */
+  font-size: 0.6rem; /* Ajusta el tamaño del texto para que sea menos prominente */
+  color: #666; /* Cambia el color del texto si es necesario */
+}
+
+footer .content {
+  margin: 0; /* Elimina el margen para optimizar el espacio */
+}
+
+.nav-reserve-btn {
+  background-color: #f7c743;
+  color: #006eff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  position: fixed; /* Fija el botón en la pantalla */
+  top: 94%; /* Centra verticalmente en móviles */
+  transform: translateY(-50%); /* Ajuste para centrar completamente */
+  left: 0; /* Pega el botón al borde derecho */
+  padding: 0.7em 1em;
+  font-size: 0.7em;
+  z-index: 1000;
+  animation: colorChange 3s infinite;
+}
+
+.nav-reserve-btn:hover {
+  background-color: #01357a;
+  color: #f7c743;
+  transform: translateY(-2px);
+}
+
+@keyframes colorChange {
+  0% {
+    color: #01357a; /* Azul oscuro */
+  }
+
+  25% {
+    color: #f00; /* Rosado */
+  }
+
+  50% {
+    color: rgb(0, 0, 0); /* Amarillo */
+  }
+
+  75% {
+    color: #006eff; /* Azul claro */
+  }
+
+  100% {
+    color: #5e019c; /* Regresa al azul oscuro */
+  }
+}
+
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
     max-width: 1152px;
+  }
+
+  .logo-fixed {
+    width: 150px;
   }
 
   .container-c {
@@ -95,6 +340,63 @@ a.navbar-item:hover {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
   }
+
+  .direct-reservation-btn {
+    margin-top: 40px;
+  }
+
+  .mt-5 {
+    margin-top: 0 !important;
+  }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
+  }
+
+  #facebook {
+    width: 66px;
+    height: auto;
+    position: relative;
+    top: -7px;
+  }
+
+  #booking {
+    width: 77px;
+    height: auto;
+  }
+
+  #medium {
+    width: 60px;
+    height: auto;
+    position: relative;
+    top: -10px;
+  }
+
+  #github {
+    width: 55.5px;
+    height: auto;
+    position: relative;
+    top: -10px;
+  }
+
+  .nav-reserve-btn {
+    background-color: #f7c743;
+    color: rgb(189, 0, 0);
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+
+  .nav-reserve-btn:hover {
+    background-color: #01357a;
+    color: #f7c743;
+    transform: translateY(-2px);
+  }
 }
 
 @media screen and (max-width: 1235px) and (min-width: 1023px) {
@@ -105,6 +407,11 @@ a.navbar-item:hover {
   .front-icon {
     width: 60px;
     margin-left: 18px;
+  }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
   }
 
   .hero-text {
@@ -141,6 +448,11 @@ a.navbar-item:hover {
     font-weight: bolder;
     font-size: 1.7rem;
   }
+
+  .icon-container {
+    margin-top: -50px !important; /* Ajusta este valor para subir o bajar los iconos */
+    justify-content: center;
+  }
 }
 
 .big-container {
@@ -148,20 +460,44 @@ a.navbar-item:hover {
 }
 
 .sustyle {
-  background: black url(../assets/sustyle.jpg) center / cover;
+  background: url(../assets/sustyle.jpeg) center / cover no-repeat;
 }
 
 .IK {
-  background: black url(../assets/IK.jpg) center / cover;
+  background: url(../assets/ik.jpg) center / cover no-repeat;
 }
 
 .private {
-  background: black url(../assets/private.jpg) center / cover;
+  background: url(../assets/private.jpg) center / cover no-repeat;
 }
 
-.easy-weather {
-  background: black url(../assets/easyweather.jpg) center / cover;
+.additional1 {
+  background: url(../assets/additional1.jpg) center / cover no-repeat;
 }
+
+.additional2 {
+  background: url(../assets/additional2.jpg) center / cover no-repeat;
+}
+
+.additional3 {
+  background: url(../assets/additional3.jpg) center / cover no-repeat;
+}
+
+.additional4 {
+  background: url(../assets/additional4.jpg) center / cover no-repeat;
+}
+
+.additional5 {
+  background: url(../assets/additional5.jpg) center / cover no-repeat;
+}
+
+.additional6 {
+  background: url(../assets/additional6.jpg) center / cover no-repeat;
+}
+
+/* .easy-weather {
+  background: black url(../assets/easyweather.jpg) center / cover;
+} */
 
 .p-project {
   background: rgba(51, 51, 51, 0.2);
@@ -180,7 +516,7 @@ a.navbar-item:hover {
 }
 
 .skill-h {
-  background-color: #45d1b2;
+  background-color: #fb0;
 }
 
 .content ul {
