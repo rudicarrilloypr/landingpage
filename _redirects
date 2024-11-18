@@ -1,1 +1,6 @@
-/* https://esteritohostel.com/:splat 301!
+# Redirigir HTTP a HTTPS
+http://esteritohostel.com/* https://esteritohostel.com/:splat 301!
+http://www.esteritohostel.com/* https://esteritohostel.com/:splat 301!
+
+# Redirigir 'www' al dominio principal
+https://www.esteritohostel.com/* https://esteritohostel.com/:splat 301!
