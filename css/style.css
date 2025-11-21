@@ -559,3 +559,20 @@ footer .content {
     display: none;
   }
 }
+
+/* En tablets (iPad y similares), no forzar el 100vh */
+@media screen and (max-width: 1024px) {
+  .home-s {
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* compensa el navbar fijo */
+}
