@@ -175,17 +175,13 @@ class HoverButton {
   }
 }
 
-const btn1 = document.getElementById('github');
-new HoverButton(btn1);
+['github', 'facebook', 'booking', 'medium'].forEach((id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    new HoverButton(el);
+  }
+});
 
-const btn2 = document.getElementById('facebook');
-new HoverButton(btn2);
-
-const btn3 = document.getElementById('booking');
-new HoverButton(btn3);
-
-const btn4 = document.getElementById('medium');
-new HoverButton(btn4);
 // Selecciona todos los enlaces del navbar, incluyendo los de la versión móvil
 const navLinks = document.querySelectorAll('.navbar-item, .item.ml-3, .item.ml-4');
 
@@ -313,5 +309,21 @@ document.addEventListener('DOMContentLoaded', () => {
     currentSlideIndex = currentIndex;
     prevTranslate = -currentIndex * slideWidth;
   }
+    // BOTONES
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  });
+}
+
 });
 
