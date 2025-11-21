@@ -309,5 +309,21 @@ document.addEventListener('DOMContentLoaded', () => {
     currentSlideIndex = currentIndex;
     prevTranslate = -currentIndex * slideWidth;
   }
+    // BOTONES
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  });
+}
+
 });
 
